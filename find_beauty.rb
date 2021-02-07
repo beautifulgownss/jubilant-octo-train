@@ -14,14 +14,14 @@ describe "automating finding beauty best sellers" do
 
     wait = Selenium::WebDriver::Wait.new(timeout: 20)
     wait.until{driver.find_element(id:'ap_email').displayed?}
-    driver.find_element(id:'ap_email').send_keys('courtney.lue@gmail.com')
+    driver.find_element(id:'ap_email').send_keys('youremailhere@gmail.com')
 
     continue = driver.find_element(css: '#continue > span')
     continue.click
 
     wait = Selenium::WebDriver::Wait.new(timeout: 20)
     wait.until{driver.find_element(id:'ap_password').displayed?}
-    driver.find_element(id:'ap_password').send_keys('hookgrip1')
+    driver.find_element(id:'ap_password').send_keys('mypassword1')
 
     signin = driver.find_element(css: '#auth-signin-button > span')
     signin.click
